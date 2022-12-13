@@ -15,6 +15,7 @@ public class FPSInput : MonoBehaviour
     public float gravity = -9.8f;
     private CharacterController charController;
     // Start is called before the first frame update
+
     void Start()
     {
         charController = GetComponent<CharacterController>();
