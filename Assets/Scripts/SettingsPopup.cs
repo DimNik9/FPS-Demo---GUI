@@ -19,10 +19,12 @@ public class SettingsPopup : MonoBehaviour
     public void Open()
     {
         gameObject.SetActive(true);
+        Messenger.Broadcast(GameEvent.SETTINGS_OPEN);
     }
     public void Close()
     {
-        gameObject.SetActive(false);    
+        gameObject.SetActive(false);
+        Messenger.Broadcast(GameEvent.SETTINGS_CLOSE);
     }
 
     public void OnSubmitName(string name)
